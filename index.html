@@ -1,16 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>My best sites</title>
-</head>
-<body>
-    <h1>Cynthia Montalvo's websites</h1>
-    <a href="https://tribute-page-cm-368.netlify.app/">Friday Khalo Tribute Page</a>
-    <a href="https://tech-doc-cm-w368.netlify.app/">Technical Documentation Page</a>
-    <a href="https://survey-form-certification-project-cm.netlify.app/">Survey Form Page</a>
-    <a href="https://landing-page-cm-368.netlify.app/">Landing Page</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+        <title>My best sites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background"></div>
+    <nav id="navbar">
+      <div class="links">
+        <header id="header"></header>
+        <a class="nav-link about-me" href="#about">about me</a>
+        <a class="nav-link projects" href="#projects">projects</a>
+        <a class="nav-link contact-info" href="#contact-info">contact me</a>
+      </div>
+    </nav>
+
+    <section id="welcome-section">
+        <h1 id="first-name"></h1>
+      <h1 id="last-name"></h1>   
+      <p class="subtitle">Web Developer</p>
+    </section>
+
+    <div class="spacer">
+
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="profile-pic">
+        <img id="p-pic" src="./images/pic.png" alt="profile picture"/>
+      </div>
+      <div>
+        <p>
+          Hello!👋 I'm a soon-to-be graduate with a degree in Computer Science
+          complemented by a minor in Visual Communication Design and Spanish.
+        </p>
+      </div>
+    </section>
+
+    <div class="spacer">
+
+    </div>
+
+    <section id="projects">
+      <div class="project-tile">
+        <h2>Projects</h2>
+        <p>Check out some of my most recent work down below!</p>
+      </div>
+      <div class="cards">
+        <div class="box" id="tribute">
+          <div class="center-box">
+            <img src="./images/frida.png" alt="frida khalo" />
+          </div>
+          <div class="title-box">
+            <a href="https://tribute-page-cm-368.netlify.app/" target="_blank"
+              >Tribute Page</a
+            >
+          </div>
+        </div>
+
+        <div class="box" id="tech">
+          <div class="center-box">
+            <img src="./images/techdoc.png" alt="technical document"/>
+          </div>
+          <div class="title-box">
+            <a href="https://tech-doc-cm-w368.netlify.app/" target="_blank"
+              >Technical Documentation</a
+            >
+          </div>
+        </div>
+
+        <div class="box" id="survey">
+          <div class="center-box">
+            <img src="./images/survey.png" alt="survey page"/>
+          </div>
+          <div class="title-box">
+            <a
+              href="https://survey-form-certification-project-cm.netlify.app/"
+              target="_blank"
+              >Survey Form</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="center-box">
+            <img src="./images/monyo.png"  alt="monyo site"/>
+          </div>
+          <div class="title-box">
+            <a
+              id="landing"
+              href="https://landing-page-cm-368.netlify.app/"
+              target="_blank"
+              >Landing Page</a
+            >
+          </div>
+        </div>
+
+        <div class="box" id="vue">
+          <div class="center-box">
+            <img src="./images/portfolio.png" alt="portfolio page"/>
+          </div>
+          <div class="title-box">
+            <a
+              href="https://blue-meadow-009c07c1e.5.azurestaticapps.net/portfolio"
+              target="_blank"
+              >Vue Portfolio</a
+            >
+          </div>
+        </div>
+
+        <div class="box" id="wordle">
+          <div class="center-box">
+            <img src="./images/wordle.png" alt="wordle"/>
+          </div>
+          <div class="title-box">
+            <a
+              href="https://gentle-sand-0aaa3be10.5.azurestaticapps.net/"
+              target="_blank"
+              >Hillbilly Wordle</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer">
+
+    </div>
+
+    <section id="contact-info">
+      <h2>Contact Me</h2>
+      <p>Want to connect or check out more of my work?</p>
+      <div class="circle-cards">
+        <div class="circle">
+          <a href="https://github.com/montalcy" id="profile-link" target="_blank">Github</a>
+        </div>
+        <div class="circle">
+          <a
+            href="www.linkedin.com/in/cynthia-montalvo-792722302"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+        <div class="circle">
+          <a href="https://www.freecodecamp.org/montalcy" target="_blank"
+            >freecodecamp</a
+          >
+        </div>
+        <div class="circle">
+          <a href="https://www.flickr.com/photos/197422998@N04/" target="_blank"
+            >flickr</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div class="spacer">
+
+    </div>
+
+    <section id="reflection">
+        <div class="milky">
+            <h2>Reflection</h2>
+            <p id="reflect">
+                This site was built to complete my free code camp responsive web design certificate with the support of my CSCD368 course. Within this course
+                I had the opportunity to grow my HTML and CSS programming while taking into account mindful designing. I've fallen in love with Figma and the 
+                process of designing and feel exponentially more confident in my abilities. This course and freecodecamp have provided an array of different 
+                skills and will be a stepping stone into the world of front end development that I plan to learn more of on my own time. Special thanks to our
+                incredibly talented professor Travis Masingale who challenged us to step out of our comfort zones throughout the quarter and never stopped 
+                encouraging us in and outside the classroom.
+            </p>
+        </div>
+    </section>
+    <footer>&copy; Cynthia Montalvo 2025</footer>
+    <script src="./js/script.js"></script> 
+  </body>
 </html>
