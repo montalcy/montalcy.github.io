@@ -219,7 +219,7 @@ margin: 10%;
 
 .paragraphs{
     width: 80vw;
-    justify-self: anchor-center;
+    margin: 0 auto;
 }
 
 #p-pic{
@@ -269,8 +269,10 @@ margin: 10%;
     border-radius: 25px;
     background: rgba(217,217,217, .3);
     padding: 10px 50px;
-    justify-self: anchor-center;
-    margin-top: 30px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+            margin-top: 30px;
 }
 
 
@@ -291,8 +293,9 @@ html, body {
     display: grid;
     grid-template-rows: auto;
     font-size: medium;
-    justify-items: anchor-center;
-}
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);    }
 #first-name{
     font-size: 79px;
     place-self: center;
@@ -489,7 +492,6 @@ p{
     text-align: center;
     font-size: 30px;
     line-height: 1.0em;
-    padding-top: 10%;
     text-transform: none;
 }
 
@@ -592,8 +594,10 @@ p{
     position: fixed;
     border-radius: 25px;
     background: rgba(217,217,217, .3);
-    justify-self: anchor-center;
-    padding: 10px 40px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+            padding: 10px 40px;
  }
 
  p:not(#reflect) {
@@ -618,8 +622,9 @@ html, body {
     grid-template-columns: 90px 90px 90px;
     grid-template-rows: auto;
     font-size: medium;
-    justify-items: anchor-center;
-}
+    top: 0;
+    left: 50%;
+    transform: translateX(0%);    }
 
 #first-name{
     font-size: 190px;
