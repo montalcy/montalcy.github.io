@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
         <title>My best sites</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,9 +42,9 @@
     <section id="about">
       <h2>About Me</h2>
       <div class="profile-pic">
-        <img id="p-pic" src="./images/pic.png" alt="profile picture"/>
+        <img id="p-pic" src="images/pic.png" alt="profile picture"/>
       </div>
-      <div>
+      <div class="paragraphs">
         <p>
           Hello!👋 I'm a soon-to-be graduate with a degree in Computer Science
           complemented by a minor in Visual Communication Design and Spanish.
@@ -59,12 +59,12 @@
     <section id="projects">
       <div class="project-tile">
         <h2>Projects</h2>
-        <p>Check out some of my most recent work down below!</p>
+        <p class="paragraphs">Check out some of my most recent work down below!</p>
       </div>
       <div class="cards">
         <div class="box" id="tribute">
           <div class="center-box">
-            <img src="./images/frida.png" alt="frida khalo" />
+            <img src="images/frida.png" alt="frida khalo" />
           </div>
           <div class="title-box">
             <a href="https://tribute-page-cm-368.netlify.app/" target="_blank"
@@ -75,7 +75,7 @@
 
         <div class="box" id="tech">
           <div class="center-box">
-            <img src="./images/techdoc.png" alt="technical document"/>
+            <img src="images/techdoc.png" alt="technical document"/>
           </div>
           <div class="title-box">
             <a href="https://tech-doc-cm-w368.netlify.app/" target="_blank"
@@ -86,7 +86,7 @@
 
         <div class="box" id="survey">
           <div class="center-box">
-            <img src="./images/survey.png" alt="survey page"/>
+            <img src="images/survey.png" alt="survey page"/>
           </div>
           <div class="title-box">
             <a
@@ -99,7 +99,7 @@
 
         <div class="box">
           <div class="center-box">
-            <img src="./images/monyo.png"  alt="monyo site"/>
+            <img src="images/monyo.png"  alt="monyo site"/>
           </div>
           <div class="title-box">
             <a
@@ -113,7 +113,7 @@
 
         <div class="box" id="vue">
           <div class="center-box">
-            <img src="./images/portfolio.png" alt="portfolio page"/>
+            <img src="images/portfolio.png" alt="portfolio page"/>
           </div>
           <div class="title-box">
             <a
@@ -126,7 +126,7 @@
 
         <div class="box" id="wordle">
           <div class="center-box">
-            <img src="./images/wordle.png" alt="wordle"/>
+            <img src="images/wordle.png" alt="wordle"/>
           </div>
           <div class="title-box">
             <a
@@ -145,24 +145,24 @@
 
     <section id="contact-info">
       <h2>Contact Me</h2>
-      <p>Want to connect or check out more of my work?</p>
+      <p class="paragraphs">Want to connect or check out more of my work?</p>
       <div class="circle-cards">
-        <div class="circle">
-          <a href="https://github.com/montalcy" id="profile-link" target="_blank">Github</a>
+        <div class="circle" id="git">
+          <a href="https://github.com/montalcy" target="_blank">Github</a>
         </div>
-        <div class="circle">
+        <div class="circle"  id="linked">
           <a
             href="www.linkedin.com/in/cynthia-montalvo-792722302"
             target="_blank"
             >LinkedIn</a
           >
         </div>
-        <div class="circle">
-          <a href="https://www.freecodecamp.org/montalcy" target="_blank"
+        <div class="circle" id="fcc">
+          <a href="https://www.freecodecamp.org/montalcy" target="_blank" id="fcc"
             >freecodecamp</a
           >
         </div>
-        <div class="circle">
+        <div class="circle" id="flckr">
           <a href="https://www.flickr.com/photos/197422998@N04/" target="_blank"
             >flickr</a
           >
@@ -176,8 +176,7 @@
 
     <section id="reflection">
         <div class="milky">
-            <h2>Reflection</h2>
-            <p id="reflect">
+            <p id="reflect" class="paragraphs">
                 This site was built to complete my free code camp responsive web design certificate with the support of my CSCD368 course. Within this course
                 I had the opportunity to grow my HTML and CSS programming while taking into account mindful designing. I've fallen in love with Figma and the 
                 process of designing and feel exponentially more confident in my abilities. This course and freecodecamp have provided an array of different 
@@ -188,6 +187,6 @@
         </div>
     </section>
     <footer>&copy; Cynthia Montalvo 2025</footer>
-    <script src="./js/script.js"></script> 
+    <script src="/js/script.js"></script> 
   </body>
 </html>

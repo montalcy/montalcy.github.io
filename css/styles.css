@@ -11,15 +11,16 @@ body {
     line-height: 1.5em;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; 
     text-transform: lowercase;
 }
 
 .containers {
-    width: 400px; /* Control the width of the container */
+    width: 400px;
     padding: 20px;
-    background-color: white; /* Optional background color */
-    border: 2px solid #ccc; /* Optional border for the container */
-    border-radius: 10px; /* Optional rounded corners */
+    background-color: white; 
+    border: 2px solid #ccc; 
+    border-radius: 10px;
   }
 
 h1{
@@ -41,7 +42,7 @@ h2{
     font-family: "Urbanist";
 }
 
-p{
+p:not(#reflect){
     text-align: center;
     font-size: 70px;
     line-height: 1.0em;
@@ -49,9 +50,15 @@ p{
     text-transform: none;
 }
 
+#reflection{
+    text-align: center;
+    text-transform: none;
+    line-height: 2.0em;
+    padding: 5%;
+}
+
 section:not(#welcome-section){
     margin: 0 auto;
-    width: 50%;
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -93,7 +100,6 @@ a:active{
 
 #reflect, h2{
     text-align: center;
-    padding: 10% 10%;
 }
 
 .spacer{
@@ -162,7 +168,8 @@ a:active{
 
 .milky{
     background-color:rgba(255, 255, 255, 0.50);
-    border-radius: 10%;
+    padding: 5%;
+    border-radius: 1%;        
 }
 
 .circle{
@@ -208,6 +215,11 @@ margin: 10%;
 .nav-link{
     color: black;
     font-weight: bold;
+}
+
+.paragraphs{
+    width: 80vw;
+    justify-self: anchor-center;
 }
 
 #p-pic{
@@ -265,24 +277,472 @@ margin: 10%;
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
-body {
+html, body {
+    overflow-x: hidden; 
 }
+
+#welcome-section{
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: auto;
+    font-size: medium;
+    justify-items: anchor-center;
+}
+#first-name{
+    font-size: 90px;
+}
+
+#last-name{
+    font-size: 90px;
+    place-self: center;
+}
+
+.subtitle{
+    font-size: 50px;
+    place-self: center;
+}
+
+h2{
+    font-size: 80px;
+    line-height: 90%;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.0em;
+    padding-top: 10%;
+    text-transform: none;
+}
+
+#p-pic{
+    max-width: 50vw;
+}
+
+#tribute{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#landing{
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+
+#vue{
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+}
+
+#survey{
+    grid-column-start: 1;
+    grid-row-start: 4;
+
+}
+
+#tech{
+    grid-column-start: 1;
+    grid-row-start: 5;
+
+}
+
+#wordle{
+    grid-column-start: 1;
+    grid-row-start: 6;
+
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 300px ;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px;
+    padding-top: 10%;
+    justify-content: center;
+}
+
+.circle-cards{ 
+    display: grid;
+    grid-template-columns: 300px ;
+    grid-template-rows: 300px 300px 300px 300px;
+    justify-content: center;
+    padding-top: 10%;
+    justify-items: center;
+}
+
+
+#git{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#fcc{
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+#flckr{
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+
+#linked{
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+}
+
+#reflect{
+    font-size: 20px;
+}
+
+.milky{
+    margin: 0 auto;
+    background-color:rgba(255, 255, 255, 0.50);
+    border-radius: 10%;
+    width: 100%;
+    max-width: 100vw;
+}
+
+    section {
+        padding: 5% 10%;
+    }
+
+ #navbar{
+    position: fixed;
+    border-radius: 25px;
+    background: rgba(217,217,217, .3);
+    justify-self: anchor-center;
+    padding: 10px 40px;
+ }
+
+ p:not(#reflect) {
+    font-size: 30px;
+ }
+
+
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
 body {
+    background-color: yellow;
 }
+html, body {
+    overflow-x: hidden; 
+}
+
+#welcome-section{
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: auto;
+    font-size: medium;
+    justify-items: anchor-center;
+}
+#first-name{
+    font-size: 90px;
+}
+
+#last-name{
+    font-size: 90px;
+    place-self: center;
+}
+
+.subtitle{
+    font-size: 50px;
+    place-self: center;
+}
+
+h2{
+    font-size: 80px;
+    line-height: 90%;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.0em;
+    padding-top: 10%;
+    text-transform: none;
+}
+
+#p-pic{
+    max-width: 50vw;
+}
+
+#tribute{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#landing{
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+
+#vue{
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+}
+
+#survey{
+    grid-column-start: 1;
+    grid-row-start: 4;
+
+}
+
+#tech{
+    grid-column-start: 1;
+    grid-row-start: 5;
+
+}
+
+#wordle{
+    grid-column-start: 1;
+    grid-row-start: 6;
+
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 300px ;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px;
+    padding-top: 10%;
+    justify-content: center;
+}
+
+.circle-cards{ 
+    display: grid;
+    grid-template-columns: 300px ;
+    grid-template-rows: 300px 300px 300px 300px;
+    justify-content: center;
+    padding-top: 10%;
+    justify-items: center;
+}
+
+
+#git{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#fcc{
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+#flckr{
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+
+#linked{
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+}
+
+#reflect{
+    font-size: 20px;
+}
+
+.milky{
+    margin: 0 auto;
+    background-color:rgba(255, 255, 255, 0.50);
+    border-radius: 10%;
+    width: 100%;
+    max-width: 100vw;
+}
+
+    section {
+        padding: 5% 10%;
+    }
+
+ #navbar{
+    position: fixed;
+    border-radius: 25px;
+    background: rgba(217,217,217, .3);
+    justify-self: anchor-center;
+    padding: 10px 40px;
+ }
+
+ p:not(#reflect) {
+    font-size: 30px;
+ }
 }
 
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px) {
-body {
-}
+html, body {
+    overflow-x: hidden; 
 }
 
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
-body {
+#welcome-section{
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
 }
+
+.links{
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: auto;
+    font-size: medium;
+    justify-items: anchor-center;
+}
+
+#first-name{
+    font-size: 190px;
+}
+
+#last-name{
+    font-size: 190px;
+    place-self: center;
+}
+
+
+h2{
+    font-size: 150px;
+    line-height: 90%;
+}
+
+p{
+    text-align: center;
+    line-height: 1.0em;
+    padding-top: 10%;
+    text-transform: none;
+}
+
+#p-pic{
+    max-width: 50vw;
+}
+
+#tribute{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#landing{
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+
+#vue{
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+}
+
+#survey{
+    grid-column-start: 1;
+    grid-row-start: 4;
+
+}
+
+#tech{
+    grid-column-start: 1;
+    grid-row-start: 5;
+
+}
+
+#wordle{
+    grid-column-start: 1;
+    grid-row-start: 6;
+
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 300px ;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px;
+    padding-top: 10%;
+    justify-content: center;
+}
+
+.circle-cards{ 
+    display: grid;
+    grid-template-columns: 300px ;
+    grid-template-rows: 300px 300px 300px 300px;
+    justify-content: center;
+    padding-top: 10%;
+    justify-items: center;
+}
+
+
+#git{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#fcc{
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+#flckr{
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+}
+
+#linked{
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+}
+
+#reflect{
+    font-size: 50px;
+}
+
+.milky{
+    margin: 0 auto;
+    background-color:rgba(255, 255, 255, 0.50);
+    border-radius: 10%;
+    width: 100%;
+    max-width: 100vw;
+}
+
+section {
+    padding: 5% 10%;
+}
+
+
+#navbar{
+    width: 80vw;
+    place-items: center;
+}
+
+.links{
+    grid-template-columns: auto auto auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 30px;
+}
+
+ .circle{
+    font-size: 30px;
+ }
+
+ p:not(#reflect) {
+    font-size: 70px;
+ }
 }

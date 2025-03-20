@@ -20,13 +20,3 @@ function animateText() {
 }
 
 const interval = setInterval(animateText, delay);
-
-
-const description = "Web Developer";
-const pop_up_delay = 100;
-
-function animateDesc(){
-    document.getElementById("description").textContent;
-
-    
-}
