@@ -289,17 +289,27 @@ html, body {
 
 .links{
     display: grid;
-    grid-template-columns: 90px 90px 90px;
     grid-template-rows: auto;
     font-size: medium;
     justify-items: anchor-center;
 }
 #first-name{
-    font-size: 90px;
+    font-size: 79px;
+    place-self: center;
+}
+
+.about-me, .contact-info{
+    padding: 0;
+
+}
+
+.projects {
+    grid-column-start: 2;
+    padding: 0 12px;
 }
 
 #last-name{
-    font-size: 90px;
+    font-size: 79px;
     place-self: center;
 }
 
@@ -421,7 +431,7 @@ p{
     border-radius: 25px;
     background: rgba(217,217,217, .3);
     justify-self: anchor-center;
-    padding: 10px 40px;
+    padding: 10px;
  }
 
  p:not(#reflect) {
