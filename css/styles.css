@@ -305,7 +305,7 @@ html, body {
 
 .projects {
     grid-column-start: 2;
-    padding: 0 12px;
+    padding: 0 42px;
 }
 
 #last-name{
@@ -432,7 +432,7 @@ p{
     background: rgba(217,217,217, .3);
     top: 0;
     left: 50%;
-    transform: translateX(-25%);
+    transform: translateX(-50%);
     padding: 10px;
     text-align: center;
  }
@@ -460,12 +460,12 @@ html, body {
 }
 
 .links{
-    display: grid;
-    grid-template-columns: 90px 90px 90px;
+    display: grid; 
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto;
     font-size: medium;
-    justify-items: anchor-center;
-}
+    justify-content: center; /* Centers grid items horizontally */
+    align-items: center;    }
 #first-name{
     font-size: 90px;
 }
