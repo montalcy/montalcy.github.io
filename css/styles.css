@@ -431,6 +431,7 @@ p{
     border-radius: 25px;
     background: rgba(217,217,217, .3);
     justify-self: anchor-center;
+    margin: 0 auto;
     padding: 10px;
  }
 
