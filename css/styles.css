@@ -430,9 +430,11 @@ p{
     position: fixed;
     border-radius: 25px;
     background: rgba(217,217,217, .3);
-    justify-self: anchor-center;
-    margin: 0 auto;
+    top: 0;
+    left: 50%;
+    transform: translateX(-25%);
     padding: 10px;
+    text-align: center;
  }
 
  p:not(#reflect) {
