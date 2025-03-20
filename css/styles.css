@@ -276,7 +276,6 @@ margin: 10%;
 }
 
 
-
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
 html, body {
@@ -293,9 +292,11 @@ html, body {
     display: grid;
     grid-template-rows: auto;
     font-size: medium;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);    }
+    text-align: center;
+    margin: 0 auto;
+    }
+
+
 #first-name{
     font-size: 79px;
     place-self: center;
