@@ -187,6 +187,10 @@ a:active{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center; /* Centers grid items horizontally */
+    align-items: center; 
 }
 
 .box{
@@ -294,6 +298,8 @@ html, body {
     font-size: medium;
     text-align: center;
     margin: 0 auto;
+    justify-content: center; /* Centers grid items horizontally */
+    align-items: center; 
     }
 
 
@@ -623,9 +629,10 @@ html, body {
     grid-template-columns: 90px 90px 90px;
     grid-template-rows: auto;
     font-size: medium;
-    top: 0;
-    left: 50%;
-    transform: translateX(0%);    }
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center; /* Centers grid items horizontally */
+    align-items: center;   }
 
 #first-name{
     font-size: 190px;
@@ -755,6 +762,10 @@ section {
     padding-top: 5%;
     padding-bottom: 5%;
     font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center; /* Centers grid items horizontally */
+    align-items: center; 
 }
 
  .circle{
